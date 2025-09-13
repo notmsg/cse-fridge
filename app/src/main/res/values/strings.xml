@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GProject</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_1">냉장고</string>
+    <string name="title_2">재료추가</string>
+    <string name="title_3">레시피</string>
+</resources>

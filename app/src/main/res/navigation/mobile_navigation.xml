@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_fridge">
+
+    <fragment
+        android:id="@+id/navigation_fridge"
+        android:name="com.example.gproject.ui.ingredient.IngredientFragment"
+        android:label="@string/title_1"
+        tools:layout="@layout/fragment_ingredient"/>
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.gproject.ui.add.AddFragment"
+        android:label="@string/title_2"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/directlyAddButton"
+            app:destination="@id/dialog_add_ingredient" />
+    </fragment>
+    <fragment
+        android:id="@+id/dialog_add_ingredient"
+        android:name="com.example.gproject.ui.add.AddFormFragment"
+        android:label="재료 직접 추가"
+        tools:layout="@layout/dialog_add_ingredient" />
+
+    <fragment
+        android:id="@+id/navigation_recipe"
+        android:name="com.example.gproject.ui.recipe.RecipeFragment"
+        android:label="@string/title_3"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
