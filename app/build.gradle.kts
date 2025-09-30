@@ -51,4 +51,12 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // ✅ Firebase BoM (버전은 BoM이 관리)
+    implementation(platform("com.google.firebase:firebase-bom:34.3.0"))
+
+    // ✅ Firebase 라이브러리
+    implementation("com.google.firebase:firebase-auth-ktx:23.2.1")
+    implementation("com.google.firebase:firebase-firestore-ktx:25.1.4")
+    implementation("com.google.firebase:firebase-common-ktx")
 }
